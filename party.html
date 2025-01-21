@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="party.css" />
+    <script defer src="events.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Upcoming Events</h1>
+      <button id="show_form">Add Event</button>
+    </header>
+
+    <div id="event_list"></div>
+  
+    <div class="event-block">
+      <span class="delete">&times;</span>
+      <h3>Bring Me the Horizon</h3>
+      <p><strong>Date:</strong> 6 - 8 June 2025</p>
+      <p><strong>Time:</strong> <span class="event-time">TBA</span></p>
+      <p><strong>Location:</strong> Rock Am Ring, Nürburg, Germany</p>
+    </div>
+
+      <div class="event-block">
+        <span class="delete">&times;</span>
+        <h3>Bring Me the Horizon</h3>
+        <p><strong>Date:</strong> 23 August 2025</p>
+        <p><strong>Time:</strong> <span class="event-time">TBA</span></p>
+        <p>
+          <strong>Location:</strong> Reading Festival, Reading, United Kingdom
+        </p>
+      </div>
+
+      <div class="event-block">
+        <span class="delete">&times;</span>
+        <h3>Bring Me the Horizon</h3>
+        <p><strong>Date:</strong> 24 August 2025</p>
+        <p><strong>Time:</strong> <span class="event-time">TBA</span></p>
+        <p><strong>Location:</strong> Leeds Festival, Leeds, United Kingdom</p>
+      </div>
+    </div>
+
+    <div id="form_pop" class="overlay" style="display: none">
+      <div class="popup">
+        <span id="close_button" class="close">&times;</span>
+        <form id="party_form">
+          <p>
+            Artist Name <br />
+            <input type="text" id="event_text" required />
+          </p>
+          <p>
+            Date <br />
+            <input type="date" id="event_date" required />
+          </p>
+          <p>
+            Time <br />
+            <input type="time" id="event_time" />
+          </p>
+          <p>
+            Location <br />
+            <input type="text" id="event_location" required />
+          </p>
+          <p>
+            Info <br />
+            <textarea id="event_info"></textarea>
+          </p>
+          <p>
+            <button type="submit">Add</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
